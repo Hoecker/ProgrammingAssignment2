@@ -49,6 +49,8 @@ cacheSolve <- function(x, ...) {
         message("getting cached data")
         return(the_inverse)         # return the inverse
     }
+    
+    # if the inverse of the matrix has not been calculated    
     inverse <- solve(x$get())       # calculate the inverse of the matrix
     x$setInverse(inverse)           # cache the calculated inverse
     inverse                         # return the inverse
