@@ -19,7 +19,7 @@ makeCacheMatrix <- function(the_matrix = matrix()) {
     }
     
     setInverse <- function(inverse){
-        inverse_matrix <- inverse  #  set (cache) the inverse
+        inverse_matrix <<- inverse  #  set (cache) the inverse
     }
     
     getInverse <- function(){
